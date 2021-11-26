@@ -1,3 +1,7 @@
+body {
+  color: rgb(49, 56, 68);
+}
+
 .bgc-main {
   background-color: rgb(125, 103, 253);
 }
@@ -26,4 +30,20 @@
   height: 5px;
   background-color: white;
   margin: 15px 0;
+}
+
+.txt-title {
+  font-size: 1.5rem;
+}
+
+.txt-sub-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(125, 103, 253);
+}
+
+.txt-detail {
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: rgb(49, 56, 68);
 }
