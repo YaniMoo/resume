@@ -90,7 +90,7 @@
             <li>JQuery, Axios, Ajax</li>
           </ul>
         </div>
-
+ 
       </b-col>
     </b-row>
   </b-container>
