@@ -9,7 +9,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/resume/favicon.ico' } 
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' } 
     ],
   },
 
@@ -20,7 +20,6 @@ export default {
   ],
 
   plugins: [
-    // { src: '~/plugins/axios.js', ssr: true },
     { src: "~/plugins/icon.js" },
   ],
 
@@ -35,7 +34,20 @@ export default {
   },
   target: 'static',
   router: {
-    base: '/resume/'
+    // base: '/resume',
+    middleware: ["path"],
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: "th",
+        path: "/resume/th",
+        component: resolve(__dirname, "pages/th.vue")
+      }),
+      routes.push({
+        name: "en",
+        path: "/resume/en",
+        component: resolve(__dirname, "pages/en.vue")
+      });
+    }
   },
   i18n: {
     locales: ["en", "th"],

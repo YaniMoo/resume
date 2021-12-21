@@ -1,13 +1,23 @@
+@font-face {
+  font-family: "Kanit-Medium";
+  src: url("../fonts/Kanit/Kanit-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
 body {
-  color: rgb(49, 56, 68);
+  color: rgb(85, 94, 112);
+  font-family: "Kanit-Medium" !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bgc-main {
-  background-color: rgb(125, 103, 253);
+  background-color: rgb(138, 136, 193);
+  color: rgb(85, 94, 112);
 }
 
 .text-color-main {
-  color: rgb(125, 103, 253);
+  color: rgb(138, 136, 193);
 }
 
 .txt-name {
@@ -33,17 +43,32 @@ body {
 }
 
 .txt-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .txt-sub-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: rgb(125, 103, 253);
+  color: rgb(138, 136, 193);
+  margin-bottom: 0;
+}
+
+.panel-info .txt-sub-title {
+  margin-bottom: 15px;
 }
 
 .txt-detail {
   font-size: 1.15rem;
   font-weight: normal;
-  color: rgb(49, 56, 68);
+  color: rgb(85, 94, 112);
+}
+
+.pd-ctn {
+  padding: 50px 0;
+}
+
+@media (max-width: 767.98px) { 
+  .pd-ctn {
+    padding: 15px !important;
+  }
 }
