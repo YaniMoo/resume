@@ -38,8 +38,13 @@ export default {
   target: 'static',
   router: {
     base: '/resume',
-    middleware: ["path"],
+    // middleware: ["path"],
     extendRoutes(routes, resolve) {
+      routes.push({
+        name: "index",
+        path: "/",
+        component: resolve(__dirname, "pages/en.vue")
+      }),
       routes.push({
         name: "th",
         path: "/th",
