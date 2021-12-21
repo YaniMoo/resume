@@ -1,6 +1,9 @@
 export default {
+  mode: 'universal',
+  target: 'server',
+
   head: {
-    title: 'Resume',
+    title: 'Yani : Resume',
     htmlAttrs: {
       lang: 'en'
     },
