@@ -34,17 +34,17 @@ export default {
   },
   target: 'static',
   router: {
-    // base: '/resume',
+    base: '/resume',
     middleware: ["path"],
     extendRoutes(routes, resolve) {
       routes.push({
         name: "th",
-        path: "/resume/th",
+        path: "/th",
         component: resolve(__dirname, "pages/th.vue")
       }),
       routes.push({
         name: "en",
-        path: "/resume/en",
+        path: "/en",
         component: resolve(__dirname, "pages/en.vue")
       });
     }
