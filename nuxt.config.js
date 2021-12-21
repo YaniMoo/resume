@@ -41,11 +41,6 @@ export default {
     // middleware: ["path"],
     extendRoutes(routes, resolve) {
       routes.push({
-        name: "index",
-        path: "/",
-        component: resolve(__dirname, "pages/en.vue")
-      }),
-      routes.push({
         name: "th",
         path: "/th",
         component: resolve(__dirname, "pages/th.vue")
@@ -54,7 +49,13 @@ export default {
         name: "en",
         path: "/en",
         component: resolve(__dirname, "pages/en.vue")
-      });
+      }),
+      routes.push({
+        name: "index",
+        path: "*",
+        component: resolve(__dirname, "pages/en.vue")
+      })
+      ;
     }
   },
   i18n: {
