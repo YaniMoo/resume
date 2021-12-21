@@ -1,11 +1,11 @@
 <template>
   <b-container class="pd-ctn">
     <b-row class="bgc-main py-5">
-      <b-col md="4" class="text-center">
+      <!-- <b-col md="4" class="text-center">
         <b-avatar src="https://placekitten.com/300/300" size="12rem"></b-avatar>
-      </b-col>
-      <b-col md="8">
-        <p class="txt-name">ญาณี ดำรงกมลทิพย์</p>
+      </b-col> -->
+      <b-col md="12" class="text-right">
+        <p class="txt-name text-break">ญาณี ดำรงกมลทิพย์</p>
         <div class="line-white" />
         <p class="txt-position">Web Developer</p>
       </b-col>
