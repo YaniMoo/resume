@@ -16,7 +16,7 @@
           <p class="txt-title">Personal Data</p>
           <p class="txt-sub-title">Gender: <span class="txt-detail">Female</span></p>
           <p class="txt-sub-title">
-            Date of Birth: <span class="txt-detail">18 March 19958</span>
+            Date of Birth: <span class="txt-detail">18 March 1995</span>
           </p>
           <p class="txt-sub-title">
             Age: <span class="txt-detail">26 yrs.</span>
